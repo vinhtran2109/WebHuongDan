@@ -9,16 +9,16 @@
 
         /* Thiết lập kiểu chữ cho toàn bộ trang */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #CCFFCC;
         }
 
         /* Định dạng tiêu đề chính */
         header {
-            background: #2c3e50;
+            background: #2e8b57;
             color: #ffffff;
             padding: 20px 0;
             text-align: center;
@@ -27,7 +27,7 @@
 
         /* Định dạng menu điều hướng */
         nav {
-            background: #34495e;
+            background: #2e8b57;
             color: #ffffff;
         }
 
@@ -51,7 +51,7 @@
         }
 
         nav ul li a:hover {
-            background: #1abc9c;
+            background: #3cb371;
             border-radius: 5px;
         }
 
@@ -77,7 +77,7 @@
         footer {
             text-align: center;
             padding: 15px 0;
-            background: #2c3e50;
+            background: #2e8b57;
             color: #ffffff;
             position: relative;
             bottom: 0;
@@ -89,6 +89,22 @@
             color: #2c3e50;
             border-bottom: 2px solid #1abc9c;
             padding-bottom: 10px;
+        }
+
+        /* Thêm kiểu cho phần tin tức và blog */
+        #tin-tuc, #blog {
+            background: #e8f8f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        #tin-tuc article, #blog article {
+            margin-bottom: 15px;
+        }
+
+        #tin-tuc h3, #blog h3 {
+            color: #16a085;
         }
     </style>
 </head>
@@ -108,27 +124,31 @@
     <main>
         <section id="trang-chu">
             <h2>Giới Thiệu</h2>
+            <img src="img/TrangChu.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
             <p>Ứng dụng Bán Vé Tàu giúp người dùng dễ dàng quản lý việc bán vé, thêm nhân viên, khách hàng và theo dõi doanh thu.</p>
             <h3>Video Hướng Dẫn</h3>
             <video controls>
-                <source src="video-demo.mp4" type="video/mp4">
+                <source src="demoapp.mp4" type="video/mp4">
                 Trình duyệt của bạn không hỗ trợ video.
             </video>
         </section>
         <section id="huong-dan-buoc-dau">
+            <img src="img/DangNhap11.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             <h2>Hướng Dẫn Bước Đầu</h2>
-            <h3>Đăng Ký và Đăng Nhập</h3>
-            <p>Hướng dẫn cách tạo tài khoản và đăng nhập vào hệ thống:</p>
+            <h3>Đăng Nhập</h3>
+            <p>Hướng dẫn cách đăng nhập vào hệ thống:</p>
             <ol>
-                <li>Truy cập vào trang đăng ký.</li>
-                <li>Điền thông tin cá nhân như tên, email, và mật khẩu.</li>
-                <li>Nhấn nút "Đăng ký" để hoàn tất.</li>
-                <li>Đăng nhập bằng email và mật khẩu đã đăng ký.</li>
+                <li>Truy cập vào trang đăng nhập.</li>
+                <li>Nhập tài khoản và mật khẩu của bạn.</li>
+                <li>Nhấn nút "Đăng nhập" để vào hệ thống.</li>
             </ol>
         </section>
         <section id="huong-dan-su-dung">
             <h2>Hướng Dẫn Sử Dụng Chi Tiết</h2>
             <h3>1. Quản Lý Nhân Viên</h3>
+            <img src="img/nhanvien.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             <p>Hướng dẫn quản lý tài khoản nhân viên:</p>
             <ol>
                 <li>Truy cập vào trang quản lý nhân viên.</li>
@@ -138,17 +158,20 @@
                 <li>Nhấn "Cập nhật" để lưu thay đổi.</li>
             </ol>
             <h3>2. Quản Lý Vé Tàu</h3>
-            <p>Hướng dẫn đặt, sửa, và hủy vé:</p>
+            <p>Hướng dẫn đặt vé</p>
             <ol>
                 <li>Truy cập vào trang đặt vé.</li>
+                <img src="img/datve.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
                 <li>Chọn chuyến đi và số lượng vé.</li>
                 <li>Nhập thông tin khách hàng và nhấn "Đặt Vé".</li>
-                <li>Để sửa vé, vào trang quản lý vé và chọn vé cần sửa.</li>
-                <li>Nhấn "Cập nhật" để lưu thay đổi.</li>
-                <li>Để hủy vé, chọn vé và nhấn "Hủy Vé".</li>
+                <img src="img/thanhtoan.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             </ol>
             <h3>3. Quản Lý Hóa Đơn</h3>
             <p>Hướng dẫn xem và in hóa đơn:</p>
+            <img src="img/hoadon.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             <ol>
                 <li>Truy cập vào trang hóa đơn.</li>
                 <li>Chọn hóa đơn cần xem.</li>
@@ -156,34 +179,39 @@
             </ol>
             <h3>4. Thống Kê Doanh Thu</h3>
             <p>Hướng dẫn xem báo cáo doanh thu:</p>
-            <ol>
+            <img src="img/ThongKeDoanhThu.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
                 <li>Truy cập vào trang thống kê.</li>
                 <li>Chọn khoảng thời gian cần thống kê.</li>
-                <li>Nhấn "Xem Báo Cáo" để xem kết quả.</li>
+                <li>Nhấn "Thống Kê" để xem kết quả.</li>
             </ol>
             <h3>5. Thống Kê Khách Hàng</h3>
             <p>Hướng dẫn xem báo cáo khách hàng:</p>
-            <ol>
+            <img src="img/KhachHang.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
                 <li>Truy cập vào trang thống kê khách hàng.</li>
                 <li>Chọn khoảng thời gian cần thống kê.</li>
-                <li>Nhấn "Xem Báo Cáo" để xem kết quả.</li>
+                <li>Nhấn "Xuất Excel" để xem kết quả.</li>
             </ol>
         </section>
         <section id="faq">
             <h2>Câu Hỏi Thường Gặp</h2>
             <h3>Quên mật khẩu thì phải làm gì?</h3>
+            <img src="img/DangNhap.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             <p>Bạn có thể nhấn vào "Quên mật khẩu" trên trang đăng nhập để nhận hướng dẫn khôi phục.</p>
+            <img src="img/QuenMatKhau.png" alt="Giới thiệu" style="width:30%; height:auto; border-radius:8px;">
             <h3>Làm sao để áp dụng mã khuyến mãi?</h3>
+            <img src="img/thanhtoan.png" alt="Giới thiệu" style="width:60%; height:auto; border-radius:8px;">
+
             <p>Nhập mã khuyến mãi vào ô tương ứng khi thanh toán.</p>
-            <h3>Tôi cần liên hệ ai khi vé tàu bị sai thông tin?</h3>
-            <p>Vui lòng liên hệ với bộ phận hỗ trợ qua email hoặc số điện thoại được cung cấp trong phần hỗ trợ.</p>
         </section>
         <section id="ho-tro">
             <h2>Liên Hệ Hỗ Trợ</h2>
             <p>Nếu bạn cần thêm thông tin hoặc hỗ trợ, vui lòng liên hệ với chúng tôi qua:</p>
-            <p>Email: support@banvetau.com</p>
+            <p>Email: supocup266@gmail.com</p>
             <p>Điện thoại: 0123-456-789</p>
         </section>
+
     </main>
     <footer>
         <p>&copy; 2023 Ứng Dụng Bán Vé Tàu. Tất cả quyền được bảo lưu.</p>
